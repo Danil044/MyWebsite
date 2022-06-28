@@ -1,0 +1,12 @@
+.UlLiDiv{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+

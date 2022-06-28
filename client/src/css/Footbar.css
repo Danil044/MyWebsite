@@ -1,0 +1,55 @@
+.myFooter{
+    position: fixed;
+    display: inline-block;
+    bottom: 0;
+    right: 0;
+    left: 0
+}
+
+.social-icons {
+    position: absolute;
+    top:0;
+    padding-top: 0.5rem;
+    list-style: none;
+}
+.social-icons>li {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+}
+.social-icons a {
+    position: relative;
+    display: block;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: background-color .3s ease-in-out;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: .25rem;
+}
+.social-icons a:hover {
+}
+.social-icons a::before {
+    content: "";
+    position: absolute;
+    width: 1.2rem;
+    height: 1.2rem;
+    left: .65rem;
+    top: .65rem;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+}
+.social-icons .social-icon-instagram::before {
+    background-image: url("http://localhost:4000/WebsiteImg/instagram.png");
+}
+.social-icons .social-icon-fb::before {
+    background-image: url("http://localhost:4000/WebsiteImg/facebooke.png");
+}
+.social-icons .social-icon-telegram::before {
+    background-image: url("http://localhost:4000/WebsiteImg/telegram.png");
+}
+
+ul li{
+    display: inline-block;
+}

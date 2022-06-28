@@ -1,0 +1,172 @@
+.DivFonFront{
+    background-size: cover;
+    min-height: 94vh;
+
+    background: linear-gradient(to top left, #999966 0%, #669999 100%);
+    -webkit-overflow-Y: hidden;
+    -moz-overflow-Y: hidden;
+    -o-overflow-Y: hidden;
+    overflow-y: hidden;
+    -webkit-animation: fadeIn 1 1s ease-out;
+    -moz-animation: fadeIn 1 1s ease-out;
+    -o-animation: fadeIn 1 1s ease-out;
+    animation: fadeIn 1 1s ease-out;
+}
+
+.DivBodyFon{
+    margin-top: 10rem;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+}
+
+.BodyCardLeft{
+    position: absolute;
+    display: inline-block;
+    padding-top: 12rem;
+    padding-left: 2rem;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    transition: 0.5s linear;
+}
+
+.BodyCardLeft:hover{
+    margin-top: -0.9rem;
+}
+
+.BodyCardRight{
+    position: absolute;
+    display: inline-block;
+    padding-top: 12rem;
+    padding-left: 2rem;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    transition: 0.5s linear;
+}
+
+.BodyCardRight:hover{
+    margin-top: -0.9rem;
+}
+
+.rotate-shadows {
+    width: 320px;
+    height: 320px;
+    position: relative;
+    display: inline-block;
+}
+.rotate-shadows:after,
+.rotate-shadows:before {
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center center;
+}
+.rotate-shadows:before {
+    box-shadow: inset 0 20px 0 rgba(0, 250, 250, 0.6), inset 20px 0 0 rgba(0, 200, 200, 0.6), inset 0 -20px 0 rgba(0, 150, 200, 0.6), inset -20px 0 0 rgba(0, 200, 250, 0.6);
+    animation: rotate-before 2s -0.5s linear infinite;
+}
+.rotate-shadows:after {
+    box-shadow: inset 0 20px 0 rgba(250, 250, 0, 0.6), inset 20px 0 0 rgba(250, 200, 0, 0.6), inset 0 -20px 0 rgba(250, 150, 0, 0.6), inset -20px 0 0 rgba(250, 100, 0, 0.6);
+    animation: rotate-after 2s -0.5s linear infinite;
+}
+
+@keyframes rotate-after {
+    0% {transform: rotateZ(0deg) scaleX(1) scaleY(1);}
+    50% {transform: rotateZ(180deg) scaleX(0.82) scaleY(0.95);}
+    100% {transform: rotateZ(360deg) scaleX(1) scaleY(1);}
+}
+@keyframes rotate-before {
+    0% {transform: rotateZ(0deg) scaleX(1) scaleY(1);}
+    50% {transform: rotateZ(-180deg) scaleX(0.95) scaleY(0.85);}
+    100% {transform: rotateZ(-360deg) scaleX(1) scaleY(1);}
+}
+
+.Body{
+    text-align: center;
+ }
+
+.DivBut{
+    margin-top: 4rem;
+}
+
+.block__item{
+    display:inline-block;
+    vertical-align:top;
+    width:263px;
+    height:263px;
+    margin-right:32px;
+}
+
+.ideaBlock{
+    border-radius: 15px;
+    height: 263px;
+    width: 262px;
+
+    display:inline-block;
+    margin-right: 32px;
+    cursor: pointer;
+    transition: 1s linear;
+}
+
+
+.SimpleJobBlock{
+    margin-top: 5rem;
+    border-radius: 15px;
+    height: 263px;
+    width: 262px;
+
+    display:inline-block;
+    margin-right: 32px;
+}
+
+.GoodJobBlock{
+    margin-top: 5rem;
+    border-radius: 15px;
+    height: 263px;
+    width: 262px;
+
+    display:inline-block;
+    margin-right: 32px;
+}
+
+.MoneyBlock {
+    border-radius: 15px;
+    height: 263px;
+    width: 262px;
+
+    display: inline-block;
+    margin-right: 32px;
+}
+
+@media all and (max-width: 1340px) {
+    .ideaBlock .ImgFront{
+        visibility: hidden;
+        clip-path: polygon(0px 0px,0px 0px,0px 0px,0px 0px);
+        display: none;
+    }
+    .SimpleJobBlock .ImgFront{
+        visibility: hidden;
+        clip-path: polygon(0px 0px,0px 0px,0px 0px,0px 0px);
+        display: none;
+    }
+    .GoodJobBlock .ImgFront{
+        visibility: hidden;
+        clip-path: polygon(0px 0px,0px 0px,0px 0px,0px 0px);
+        display: none;
+    }
+    .MoneyBlock .ImgFront{
+        visibility: hidden;
+        clip-path: polygon(0px 0px,0px 0px,0px 0px,0px 0px);
+        display: none;
+    }
+    .FrontFonH3{
+        display: none;
+    }
+}
+
