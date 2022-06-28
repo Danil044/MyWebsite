@@ -8,7 +8,7 @@ import dateFormat from "dateformat";
 import {axiosInstance} from "../../config";
 
 const SinglePost = observer(() => {
-    const PF = "http://localhost:4000/images/";
+    const PF = "https://jobsearch0.herokuapp.com/images/";
     const location = useLocation();
     const path = location.pathname.split("/")[2];
     const { user } = useContext(Context);

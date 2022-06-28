@@ -8,7 +8,7 @@ import {observer} from "mobx-react-lite";
 
 const PostsItems = observer(({post, countries, cites, categories}) => {
 
-    const PF = "http://localhost:4000/images/";
+    const PF = "https://jobsearch0.herokuapp.com/images/";
     const [postsIdVisible, setPostsIdVisible] = useState(false)
 
     const click = async () => {
